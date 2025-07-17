@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog - CompareOS</title>
+    <link rel="stylesheet" href="compareOS.css" />
+  </head>
+  <body>
+    <header>
+      <p class="title">Daily Blog</p>
+      <div class="button-container">
+        <a href="index.html">
+          <button>IT Challanges</button>
+        </a>
+        <a href="compareOS.html">
+          <button>Compare OS</button>
+        </a>
+      </div>
+    </header>
+    <div class="container">
+      <h1 class="text-center">Comparison between Windows, Linux and MacOS</h1>
+      <div class="img-container">
+        <img id="OS-image" src="media/OS-comparison.png" alt="os media" />
+      </div>
+      <h2>Introduction</h2>
+      <p>
+        An Operating System (OS) is an interface between a computer user and
+        computer hardware. An operating system is software which performs all
+        the basic tasks like file management, memory management, process
+        management, handling input and output, and controlling peripheral
+        devices such as disk drives and printers. We are going to look at the
+        difference between the big three operating systems, namely, Windows,
+        MacOS and Linux.
+      </p>
+      <h3>Use and cost</h3>
+      <p>
+        Let's start with the key questions I ask when anyone comes to me for
+        advice about computer purchasing:
+      </p>
+      <ul>
+        <li>What do you want to do with it?</li>
+        <li>How much do you want to spend?</li>
+        <li>Which of those two (use versus spend) is more important?</li>
+      </ul>
+      <p>
+        Windows typically comes with new PCs. If you have an old PC, it almost
+        certainly comes with Windows. Pretty much the only time you're going to
+        pay to buy Windows is if you're building one of your own, and we'll
+        address that later. Macs always come with MacOS, so there's no cost
+        there. And, of course, Linux is free. The much bigger cost for all these
+        environments will be your ongoing maintenance expenses.
+      </p>
+      <div class="img-container">
+        <img src="media/os-cost-catoon.jpeg" alt="" />
+      </div>
+      <p>
+        If you have a budget and require a fast-blazing machine, MacOS is your
+        best option. For limited budget and simple interface, i would suggest
+        windows and lastly for free open-source OS but with complexity, use
+        Linux. As simple as that, you have made your choice.
+      </p>
+      <section>
+        <h2>Windows</h2>
+        <h4>Directory Structure</h4>
+        <p>
+          The Windows OS often uses the C drive as the main drive of the
+          computer. Every folder, file and programs are stored inside this
+          drive, and the terminal may look like this <b>C:\></b>. A user folder
+          is created inside the C drive, meaning every user will have its own
+          directories. Windows also uses backslashes compared to other operating
+          systems.
+        </p>
+        <div class="img-container">
+          <img src="media/cmd.png" alt="" />
+        </div>
+        <h4>Naming Convention</h4>
+        <p>
+          All file systems follow the same general naming conventions for an
+          individual file: a base file name and an optional extension, separated
+          by a period. However, each file system, such as NTFS, CDFS, exFAT,
+          UDFS, FAT, and FAT32, can have specific and differing rules about the
+          formation of the individual components in the path to a directory or
+          file.
+        </p>
+        <p>
+          The following fundamental rules enable applications to create and
+          process valid names for files and directories, regardless of the file
+          system:
+        </p>
+        <ul>
+          <li>
+            Use a period to separate the base file name from the extension in
+            the name of a directory or file.
+          </li>
+          <li>
+            Use a backslash (\) to separate the components of a path, for
+            example C:\.Does not assume case sensitivity. Oscar and OSCAR are
+            not the same.
+          </li>
+          <li>
+            Files have a maximum length limit. Cannot have a long-named file.
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Linux</h2>
+        <h4>Directory Structure</h4>
+        <p>
+          Linux has the most complex file system and command interface. Just
+          like Windows, Linux creates it own main drive, they call it the root
+          directory. All the files and folders are stored in this directory.
+          What makes the file system even more complex is that Linux has
+          different distributions including Fedora, Ubuntu, Debian, Red Hat and
+          many others. You have to adapt to the structure based on what you
+          choose. Uses foward-slash implementation just like root:/
+        </p>
+        <div class="img-container">
+          <img src="media/ubuntu.png" alt="" />
+        </div>
+        <h4>Naming Convention</h4>
+        <p>
+          Linux file systems (such as ext4, Btrfs, XFS, etc.) follow
+          POSIX-compliant naming and path conventions. These rules apply across
+          most Linux distributions:
+        </p>
+        <ul>
+          <li>Use a forward slash / to separate components in a path.</li>
+          <li>
+            No drive letters — Linux uses a single hierarchical file system tree
+            rooted at /.
+          </li>
+          <li>
+            Case-sensitive: File.txt, file.txt, and FILE.TXT are three different
+            files.
+          </li>
+          <li>
+            File extensions are optional and not required by the system. A file
+            is identified by its content or permissions, not the extension.
+          </li>
+          <li>
+            Hidden files or directories begin with a dot. (e.g., .bashrc,
+            .config).
+          </li>
+          <li>
+            There are no restrictions on length in most modern file systems
+            (usually up to 255 characters for file names).
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>MacOS</h2>
+        <h4>Directory Structure</h4>
+        <p>
+          The macOS file structure is UNIX based operating system. Unlike
+          Windows, macOS does not use drive letters; instead, all files and
+          folders exist within this unified structure. The main user-facing
+          directory is located at /Users, where each user has their own folder
+          (e.g., /Users/alex). This is equivalent to the C:\Users\ directory in
+          Windows. The macOS terminal typically starts in the user’s home
+          directory and might look like this: alex@MacBook ~ %. macOS uses
+          forward slashes (/) to separate path components, consistent with UNIX
+          conventions. Mounted drives and external volumes appear under the
+          /Volumes directory rather than having individual drive letters like
+          C:\ or D:\. System files and applications are stored in directories
+          like /System, /Library, and /Applications.
+        </p>
+        <div class="img-container">
+          <img src="media/zsh.webp" alt="" />
+        </div>
+        <h4>Naming Convention</h4>
+        <p>
+          macOS uses Apple File System and supports HFS+. It follows similar
+          UNIX-style naming conventions but with a few Mac-specific behaviors:
+        </p>
+        <ul>
+          <li>Use a forward slash / to separate path components.</li>
+          <li>
+            <p>
+              Case-insensitive by default on APFS and HFS+ volumes, but this can
+              vary:
+            </p>
+            <ul>
+              <li>
+                file.txt and File.txt are the same file on default
+                installations.
+              </li>
+              <li>Developers can format volumes to be case-sensitive.</li>
+            </ul>
+          </li>
+          <li>
+            File extensions are optional and not required. The system may use
+            metadata to identify file types (like MIME types or Uniform Type
+            Identifiers).
+          </li>
+          <li>
+            <p>File names can include almost any character, except:</p>
+            <ul>
+              <li>Colon: (used internally by macOS)</li>
+              <li>Null character \0</li>
+            </ul>
+          </li>
+          <li>
+            Slashes / are reserved as path separators, so they cannot be used in
+            file names.
+          </li>
+        </ul>
+      </section>
+      <p>
+        There are many other differences between these operating systems in
+        regard to how they operate and take commands. These are some of the
+        missing differences between Windows, MacOS and Linux which might be
+        helpful when trying to identify the machine’s operating system.
+      </p>
+
+      <table class="table">
+        <tr>
+          <th>Category</th>
+          <th>Windows</th>
+          <th>Linux</th>
+          <th>MacOS</th>
+        </tr>
+        <tr>
+          <td><b>File System </b></td>
+          <td>NTFS, FAT32, exFAT</td>
+          <td>ext4, Btrfs, XFS, FAT32, exFAT</td>
+          <td>APFS, HFS+, exFAT, FAT32</td>
+        </tr>
+        <tr>
+          <td><b>Executable File Types </b></td>
+          <td>.exe, .msi, .bat</td>
+          <td>No fixed extensions (e.g., ELF binaries)</td>
+          <td>No fixed extensions (e.g., Mach-O binaries)</td>
+        </tr>
+        <tr>
+          <td><b>Script Execution </b></td>
+          <td>cmd, PowerShell, .bat</td>
+          <td>bash, zsh, sh, fish, etc.</td>
+          <td>zsh, bash, sh, fish, etc.</td>
+        </tr>
+      </table>
+
+      <section>
+        <h2>Conclusion</h2>
+        <p>
+          As mentioned before, it really depends on your budget, computing needs
+          and many more. Match your needs and choose the best operating system
+          based on your needs and what you can afford, they are more or less the
+          same, they all compute, do arithmetics and display the output.
+        </p>
+      </section>
+    </div>
+    <footer>
+      <p>Ethen-tech</p>
+    </footer>
+  </body>
+</html>
