@@ -69,7 +69,7 @@ ol li {
 }
 .block {
   border-radius: 0.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 .block:hover {
   cursor: pointer;
@@ -101,7 +101,7 @@ li a:visited {
   justify-content: center;
 }
 .slide img {
-  width: 80%;
+  width: 50%;
   margin-bottom: 4rem;
 }
 footer {
