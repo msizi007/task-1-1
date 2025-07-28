@@ -1,5 +1,22 @@
+:root {
+  --img-container-margin: 4rem;
+  --dynamic-size: 100%;
+
+  --margin-y-1rem: 1rem 0;
+  --margin-y-2rem: 2rem 0;
+  --margin-y-3rem: 3rem 0;
+  --margin-y-4rem: 4rem 0;
+  --margin-y-8rem: 8rem 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 html {
-  font-size: 120%;
+  font-size: 100%;
 }
 body {
   margin-top: 7rem;
@@ -30,7 +47,7 @@ table {
   text-align: center;
 }
 section {
-  margin: 4rem 0;
+  margin: var(--margin-y-4rem);
 }
 header {
   position: fixed;
@@ -63,8 +80,13 @@ button:hover {
   cursor: pointer;
   background-color: rgb(65, 63, 63);
 }
+img {
+  width: 50%;
+}
+
+/* class level */
 .container {
-  margin: 2rem;
+  margin: 4rem;
 }
 .text-center {
   text-align: center;
@@ -73,14 +95,58 @@ button:hover {
   display: flex;
   justify-content: center;
 }
-img {
-  width: 50%;
+
+.windows,
+.linux,
+.macos {
+  margin-top: var(--margin-y-8rem);
 }
+
+.introduction h2,
+.introduction h3,
+.windows h2,
+.linux h2,
+.macos h2 {
+  margin: 2rem 0;
+}
+
+.introduction ul,
+.windows ul,
+.linux ul {
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+}
+.macos ul {
+  padding-left: 1rem;
+}
+.introduction .img-container,
+.windows .img-container,
+.linux .img-container,
+.macos .img-container {
+  margin: var(--margin-y-4rem);
+}
+.introduction p,
+.windows p,
+.linux p,
+.macos p,
+.others p,
+.conclusion p {
+  margin: 1rem 0;
+}
+.windows h4,
+.linux h4,
+.macos h4 {
+  margin: 1rem 0;
+}
+
+/* footer */
 footer {
   display: flex;
   justify-content: center;
   background-color: gray;
   color: white;
+  font-size: 1.2rem;
+  padding: 2rem;
 }
 footer p {
   font-weight: 700;
