@@ -10,7 +10,6 @@ html {
 body {
   height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
-  margin-top: 7rem;
 }
 h1 {
   display: flex;
@@ -19,7 +18,8 @@ h1 {
   text-align: center;
 }
 header {
-  position: fixed;
+  /*position: fixed;*/
+  margin-bottom: 2rem;
   top: 0;
   left: 0;
   width: 100%;
